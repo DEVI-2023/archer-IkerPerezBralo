@@ -24,7 +24,7 @@ namespace Archer
         // (para que la cámara esté más orienta hacia la cabeza que a los pies)
         [SerializeField]
         private Vector3 offset;
-        
+
         // Velocidad a la que se mueve la cámara con Vector3.MoveTowards()
         //[SerializeField]
         //private float travelSpeed;
@@ -33,11 +33,28 @@ namespace Archer
         [SerializeField]
         private float travelTime;
 
-        private void Update()
+        [SerializeField]
+        private Vector3 rotationOffset;
+
+        void FixedUpdate()
         {
-  
+            checkCameraBehaviour();
         }
 
-    }
+        void checkCameraBehaviour()
+        {
+            Vector3 idealPostion = target.position + target.rotation * offset;
+            idealPostion.z = idealPostion.z - distance;
+            idealPostion.y = idealPostion.y + distance/2;
+            Vector3 positionSmooth = Vector3.Lerp(transform.position, idealPostion, 2);
+            transform.position = positionSmooth;
 
+            Quaternion idealRotation = target.rotation * Quaternion.Euler(target.transform.rotation.eulerAngles);
+            Quaternion rotationSmooth = Quaternion.Lerp(transform.rotation, idealRotation, 5);
+            transform.rotation = rotationSmooth;
+
+            this.transform.LookAt(target);
+
+        }
+    }
 }
