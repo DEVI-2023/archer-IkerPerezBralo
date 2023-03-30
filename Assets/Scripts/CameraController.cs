@@ -38,17 +38,16 @@ namespace Archer
 
         void FixedUpdate()
         {
-            checkCameraBehaviour();
+            Vector3 newPos = target.position + target.rotation * offset + target.transform.forward * (-distance);
+            checkCameraBehaviour(newPos);
         }
 
-        void checkCameraBehaviour()
+        void checkCameraBehaviour(Vector3 newPos)
         {
-            Vector3 idealPostion = target.position + target.rotation * offset + target.transform.forward * (-distance);
-            Vector3 positionSmooth = Vector3.Lerp(transform.position, idealPostion, 2);
-            transform.position = positionSmooth;
+            
+            transform.position = Vector3.Lerp(transform.position, newPos, 2);
 
-            Quaternion rotationSmooth = Quaternion.Lerp(transform.rotation, target.transform.rotation, 0.2f);
-            transform.rotation = rotationSmooth;
+            transform.rotation = Quaternion.Lerp(transform.rotation, target.transform.rotation, 0.2f);
 
             this.transform.LookAt(target.transform.position + offset);
 

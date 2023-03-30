@@ -53,16 +53,26 @@ namespace Archer
 
 
             // Instanciar una flecha
-           
+            GameObject newArrow = Instantiate(arrowPrefab, this.transform.position, this.transform.rotation);
+
 
             // Colocar la flecha en el punto de referencia de la mano de la arquera
-         
+            checkArrowPosition(handPosition, newArrow);
+
 
             // Orientar la flecha hacia delante con respecto a la arquera
-           
+            newArrow.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles);
 
             // Aplicar una fuerza a la flecha para que salga disparada
-          
+            newArrow.GetComponent<Rigidbody>().AddForce(this.transform.forward * force);
+            Destroy(newArrow, 1f);
+        }
+
+        private void checkArrowPosition(Transform trans, GameObject arrow)
+        {
+            arrow.transform.position = trans.position;
+            arrow.transform.rotation = trans.rotation;
+            arrow.transform.localScale = trans.localScale;
         }
     }
 
