@@ -43,17 +43,14 @@ namespace Archer
 
         void checkCameraBehaviour()
         {
-            Vector3 idealPostion = target.position + target.rotation * offset;
-            idealPostion.z = idealPostion.z - distance;
-            idealPostion.y = idealPostion.y + distance/2;
+            Vector3 idealPostion = target.position + target.rotation * offset + target.transform.forward * (-distance);
             Vector3 positionSmooth = Vector3.Lerp(transform.position, idealPostion, 2);
             transform.position = positionSmooth;
 
-            Quaternion idealRotation = target.rotation * Quaternion.Euler(target.transform.rotation.eulerAngles);
-            Quaternion rotationSmooth = Quaternion.Lerp(transform.rotation, idealRotation, 5);
+            Quaternion rotationSmooth = Quaternion.Lerp(transform.rotation, target.transform.rotation, 0.2f);
             transform.rotation = rotationSmooth;
 
-            this.transform.LookAt(target);
+            this.transform.LookAt(target.transform.position + offset);
 
         }
     }
