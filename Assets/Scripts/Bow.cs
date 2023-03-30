@@ -43,6 +43,7 @@ namespace Archer
         {
             // Cuando se pulsa espacio, producimos un disparo
             StartCoroutine(Shoot());
+            this.animator.SetTrigger("Shoot");
         }
 
         private IEnumerator Shoot()
