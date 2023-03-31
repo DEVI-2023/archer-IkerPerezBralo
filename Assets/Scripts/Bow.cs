@@ -66,7 +66,7 @@ namespace Archer
 
             // Aplicar una fuerza a la flecha para que salga disparada
             newArrow.GetComponent<Rigidbody>().AddForce(this.transform.forward * force);
-            Destroy(newArrow, 1f);
+           
         }
 
         private void checkArrowPosition(Transform trans, GameObject arrow)
