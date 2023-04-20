@@ -17,6 +17,11 @@ namespace Archer
 
         public event IScoreProvider.ScoreAddedHandler OnScoreAdded;
 
+        void Start()
+        {
+            
+        }
+
         private void Awake()
         {
             animator = GetComponent<Animator>();
@@ -42,6 +47,10 @@ namespace Archer
             {
                 Die();
                 Destroy(this.gameObject, 2f);
+                Vector3 transform = new Vector3(-235f, -206f, 176f);
+
+                GameObject.FindGameObjectWithTag("Light").SetActive(false);
+
             }
         }
 
