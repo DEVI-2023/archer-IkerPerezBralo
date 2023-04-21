@@ -21,13 +21,13 @@ namespace Archer
         {
             // La flecha sólo produce daño y ruido en el primer impacto
             if (hit) {
-                return;
+                this.GetComponent<AudioSource>().Play();
             }
 
             // Si impacta con el jugador, lo ignoramos
             if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                return;
+                this.GetComponent<AudioSource>().Play();
             }
 
             hit = true;
