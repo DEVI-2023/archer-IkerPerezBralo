@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 68
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 432
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 110
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 111
+  controlID: 58
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,7 +354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319
     y: 73
-    width: 476
+    width: 529
     height: 542
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -471,22 +471,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\iker.perez.bralo\Documents\GitHub\archer-IkerPerezBralo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 41}
-    m_SelectedIDs: 429c0000
-    m_LastClickedID: 40002
-    m_ExpandedIDs: 00000000349c00003c9c0000409c0000fcea000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 94650000
+    m_LastClickedID: 26004
+    m_ExpandedIDs: 000000003a65000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,7 +514,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000003a650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,11 +601,11 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 413
+    m_CachedPref: 244
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 637
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -642,9 +642,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: f04f0000
       m_LastClickedID: 0
-      m_ExpandedIDs: a806ffffba0fffff20a7ffff9cabffffdeabffff5aadffff72afffff689f0000a89f0000b69f0000
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -745,7 +745,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -893,9 +893,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -16.060913, y: -2.2157044, z: 27.964952}
+    m_Target: {x: -24.353367, y: -7.009241, z: -7.936289}
     speed: 2
-    m_Value: {x: -16.060913, y: -2.2157044, z: 27.964952}
+    m_Value: {x: -24.353367, y: -7.009241, z: -7.936289}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -942,13 +942,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.090145685, y: -0.030771958, z: 0.002781816, w: -0.9954667}
+    m_Target: {x: -0.15458727, y: 0.7820666, z: -0.2141834, w: -0.5644863}
     speed: 2
-    m_Value: {x: -0.09014411, y: -0.030771421, z: 0.0027817676, w: -0.99544936}
+    m_Value: {x: -0.15426238, y: 0.78289497, z: -0.21441026, w: -0.5633}
   m_Size:
-    m_Target: 14.861279
+    m_Target: 12.0366
     speed: 2
-    m_Value: 14.861279
+    m_Value: 12.603769
   m_Ortho:
     m_Target: 0
     speed: 2
